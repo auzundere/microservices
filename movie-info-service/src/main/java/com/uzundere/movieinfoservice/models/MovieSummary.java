@@ -1,28 +1,15 @@
 package com.uzundere.movieinfoservice.models;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-public class Movie {
-    private String movieId;
+public class MovieSummary {
     private String title;
     private String overview;
 
-    public Movie() {
+    public MovieSummary() {
     }
 
-    public Movie(String movieId, String title, String overview) {
-        this.movieId = movieId;
+    public MovieSummary(String title, String overview) {
         this.title = title;
         this.overview = overview;
-    }
-
-    public String getMovieId() {
-        return movieId;
-    }
-
-    public void setMovieId(String movieId) {
-        this.movieId = movieId;
     }
 
     public String getTitle() {
